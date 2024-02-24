@@ -2,9 +2,9 @@ import datetime
 import random
 from random import choices
 from datetime import timedelta
-from logUtils import LoggerFactory
+from utils import logUtils as l
 
-logger = LoggerFactory.get_logger(__name__, log_level="INFO")
+logger = l.LoggerFactory.get_logger(__name__, log_level="INFO")
 
 
 def random_timestamps(start_time, end_time, number_of_dates=1, date_format='%Y-%m-%d %H:%M:%S'):
